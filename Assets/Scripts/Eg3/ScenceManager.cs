@@ -40,6 +40,14 @@ namespace Example3
         
         public void CheckAnswer()
         {
+            foreach (Transform child in slotTransform)
+            {
+                Destroy(child.gameObject);
+            }
+            foreach (Transform child in poolTransform)
+            {
+                Destroy(child.gameObject);
+            }
             PrepareQuestion();
         }
         public void PrepareQuestion()
