@@ -63,7 +63,7 @@ public class DragAndDropItem : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 			iconRect.anchorMin = new Vector2(0.5f, 0.5f);
 			iconRect.anchorMax = new Vector2(0.5f, 0.5f);
 			iconRect.sizeDelta = new Vector2(myRect.rect.width, myRect.rect.height);
-
+			
 			if (OnItemDragStartEvent != null)
 			{
 				OnItemDragStartEvent(this);                                			// Notify all items about drag start for raycast disabling

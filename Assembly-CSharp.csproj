@@ -58,6 +58,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Drag&amp;Drop\DraggableComponent.cs" />
+     <Compile Include="Assets\Scripts\Drag&amp;Drop\DropArea.cs" />
+     <Compile Include="Assets\Scripts\Drag&amp;Drop\DropCondition.cs" />
+     <Compile Include="Assets\Scripts\Drag&amp;Drop\EquipmentSlot.cs" />
+     <Compile Include="Assets\Scripts\Drag&amp;Drop\IsWeaponCondition.cs" />
+     <Compile Include="Assets\Scripts\Drag&amp;Drop\Weapon.cs" />
+     <Compile Include="Assets\Scripts\Drag&amp;Drop\WeaponSlot.cs" />
      <Compile Include="Assets\Scripts\Eg\DragAndDropCell.cs" />
      <Compile Include="Assets\Scripts\Eg\DragAndDropItem.cs" />
      <Compile Include="Assets\Scripts\Eg\DummyControlUnit.cs" />
@@ -65,11 +72,13 @@
      <Compile Include="Assets\Scripts\Eg1\Question.cs" />
      <Compile Include="Assets\Scripts\Eg2\DragHandler.cs" />
      <Compile Include="Assets\Scripts\Eg2\DropSlot.cs" />
-     <Compile Include="Assets\Scripts\Eg2\ItemPool.cs" />
      <Compile Include="Assets\Scripts\Eg3\DragHandler.cs" />
      <Compile Include="Assets\Scripts\Eg3\DropSlot.cs" />
      <Compile Include="Assets\Scripts\Eg3\ItemPool.cs" />
      <Compile Include="Assets\Scripts\Eg3\ScenceManager.cs" />
+     <Compile Include="Assets\Scripts\Eg4\DragAndDropCell.cs" />
+     <Compile Include="Assets\Scripts\Eg4\DragAndDropItem.cs" />
+     <Compile Include="Assets\Scripts\Eg4\DummyControlUnit.cs" />
      <Compile Include="Assets\Scripts\MainSceneManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
