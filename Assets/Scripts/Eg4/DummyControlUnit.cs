@@ -1,6 +1,8 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 namespace Example4
 {
@@ -9,6 +11,7 @@ namespace Example4
     /// </summary>
     public class DummyControlUnit : MonoBehaviour
     {
+        public TextMeshProUGUI result;
         /// <summary>
         /// Operate all drag and drop requests and events from children cells
         /// </summary>
@@ -19,6 +22,7 @@ namespace Example4
             DummyControlUnit sourceSheet = desc.sourceCell.GetComponentInParent<DummyControlUnit>();
             // Get control unit of destination cell
             DummyControlUnit destinationSheet = desc.destinationCell.GetComponentInParent<DummyControlUnit>();
+            
             switch (desc.triggerType) // What type event is?
             {
                 case DragAndDropCell.TriggerType.DropRequest
@@ -27,6 +31,7 @@ namespace Example4
                         "Request " + desc.item.name + " from " + sourceSheet.name + " to " + destinationSheet.name);
                     break;
                 case DragAndDropCell.TriggerType.DropEventEnd: // Drop event completed (successful or not)
+                    result.transform.gameObject.SetActive(false);
                     if (desc.permission == true) // If drop successful (was permitted before)
                     {
                         Debug.Log("Successful drop " + desc.item.name + " from " + sourceSheet.name + " to " +
@@ -88,5 +93,30 @@ namespace Example4
                 }
             }
         }
+        public void Check()
+        {
+            String[] correct ={"Star","Cup","Winner","Blue Star"};
+            String resultText = "Congratulations!!!";
+            
+            for(int i = 0; i < GetComponent<DummyControlUnit>().gameObject.transform.childCount; i++)
+            {
+                if (GetComponent<DummyControlUnit>().gameObject.transform.GetChild(i).childCount > 0)
+                {
+                    if (correct[i] != GetComponent<DummyControlUnit>().gameObject.transform.GetChild(i).GetChild(0).GetComponent<Image>().sprite.name)
+                    {
+                        resultText = "Try Again!!!";
+                        break;
+                    }
+                }
+                else
+                {
+                    resultText = "Try Again!!!";
+                    break;
+                }
+            }
+            result.transform.gameObject.SetActive(true);
+            result.text = resultText;
+        }
     }
+    
 }

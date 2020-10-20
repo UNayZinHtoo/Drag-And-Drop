@@ -294,6 +294,18 @@ namespace Example4
 			{
 				desc.triggerType = TriggerType.DropRequest;
 				desc.permission = true;
+				if (cellType == CellType.DropOnly)
+				{
+					if (transform.childCount == 0 && transform.name.Trim() == desc.sourceCell.transform.name.Trim())
+					{
+						desc.permission = true;
+						Debug.Log("This " + transform.name + " is equal " + desc.sourceCell.transform.name);
+					}
+					else
+					{
+						desc.permission = false;
+					}
+				}
 				SendNotification(desc);
 				result = desc.permission;
 			}
