@@ -19,7 +19,6 @@
           <e p="Eg2" t="Include">
             <e p="DragHandler.cs" t="Include" />
             <e p="DropSlot.cs" t="Include" />
-            <e p="Eg2SceneManager.cs" t="Include" />
             <e p="ItemPool.cs" t="Include" />
           </e>
           <e p="Eg3" t="Include">

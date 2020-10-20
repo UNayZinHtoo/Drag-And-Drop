@@ -337,9 +337,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 153704504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 028acc5f837b9104f8213c20e2b74fa4, type: 3}
+  m_Script: {fileID: 11500000, guid: 35e43956c3fe080488b8f1380096697a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: Example
 --- !u!4 &153704506
 Transform:
   m_ObjectHideFlags: 0

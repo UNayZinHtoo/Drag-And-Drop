@@ -65,7 +65,6 @@
      <Compile Include="Assets\Scripts\Eg1\Question.cs" />
      <Compile Include="Assets\Scripts\Eg2\DragHandler.cs" />
      <Compile Include="Assets\Scripts\Eg2\DropSlot.cs" />
-     <Compile Include="Assets\Scripts\Eg2\Eg2SceneManager.cs" />
      <Compile Include="Assets\Scripts\Eg2\ItemPool.cs" />
      <Compile Include="Assets\Scripts\Eg3\DragHandler.cs" />
      <Compile Include="Assets\Scripts\Eg3\DropSlot.cs" />

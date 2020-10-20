@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainSceneManager : MonoBehaviour
 {
+    public String sceneName;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +17,17 @@ public class MainSceneManager : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
-            Application.Quit();
+        {
+            if (sceneName=="MainScene")
+            {
+                Application.Quit();
+            }
+            else
+            {
+                LoadScene("MainScene");
+            }
+        }
+            
     }
     public void LoadScene(string sceneName)
     {
