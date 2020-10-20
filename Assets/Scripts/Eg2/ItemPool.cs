@@ -10,7 +10,7 @@ namespace Example2
     {
         public void OnDrop(PointerEventData eventData)
         {
-            DragHandler.itemDragging.transform.SetParent(transform);
+            //DragHandler.itemDragging.transform.SetParent(transform);
         }
     }
 }

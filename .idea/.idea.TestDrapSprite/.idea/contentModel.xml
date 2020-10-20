@@ -7,6 +7,11 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Eg" t="Include">
+            <e p="DragAndDropCell.cs" t="Include" />
+            <e p="DragAndDropItem.cs" t="Include" />
+            <e p="DummyControlUnit.cs" t="Include" />
+          </e>
           <e p="Eg1" t="Include">
             <e p="DragAndDropManager.cs" t="Include" />
             <e p="Question.cs" t="Include" />

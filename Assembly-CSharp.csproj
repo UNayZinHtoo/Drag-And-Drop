@@ -58,6 +58,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Eg\DragAndDropCell.cs" />
+     <Compile Include="Assets\Scripts\Eg\DragAndDropItem.cs" />
+     <Compile Include="Assets\Scripts\Eg\DummyControlUnit.cs" />
      <Compile Include="Assets\Scripts\Eg1\DragAndDropManager.cs" />
      <Compile Include="Assets\Scripts\Eg1\Question.cs" />
      <Compile Include="Assets\Scripts\Eg2\DragHandler.cs" />

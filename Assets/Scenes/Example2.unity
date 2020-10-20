@@ -820,7 +820,6 @@ GameObject:
   - component: {fileID: 686427545}
   - component: {fileID: 686427544}
   - component: {fileID: 686427546}
-  - component: {fileID: 686427547}
   m_Layer: 5
   m_Name: Pool
   m_TagString: Untagged
@@ -917,18 +916,6 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
---- !u!114 &686427547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 686427542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e91687f9edf13646b337ad6dd3422fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &736178941
 GameObject:
   m_ObjectHideFlags: 0
