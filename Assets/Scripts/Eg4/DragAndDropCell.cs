@@ -296,7 +296,7 @@ namespace Example4
 				desc.permission = true;
 				if (cellType == CellType.DropOnly)
 				{
-					if (transform.childCount == 0 && transform.name.Trim() == desc.sourceCell.transform.name.Trim())
+					if (transform.childCount == 0 && transform.name.Trim() == desc.sourceCell.transform.GetChild(0).GetComponent<Image>().sprite.name.Trim())
 					{
 						desc.permission = true;
 						Debug.Log("This " + transform.name + " is equal " + desc.sourceCell.transform.name);
