@@ -50,6 +50,8 @@ namespace Example4
 
 		private DragAndDropItem myDadItem; // Item of this DaD cell
 
+		public GameObject AnsItem;
+
 		void OnEnable()
 		{
 			DragAndDropItem.OnItemDragStartEvent += OnAnyItemDragStart; // Handle any item drag start
@@ -296,10 +298,19 @@ namespace Example4
 				desc.permission = true;
 				if (cellType == CellType.DropOnly)
 				{
-					if (transform.childCount == 0 && transform.name.Trim() == desc.sourceCell.transform.GetChild(0).GetComponent<Image>().sprite.name.Trim())
+					/*if (transform.childCount == 0 && transform.name.Trim() == desc.sourceCell.transform.GetChild(0).GetComponent<Image>().AnsItem.name.Trim())
 					{
 						desc.permission = true;
 						Debug.Log("This " + transform.name + " is equal " + desc.sourceCell.transform.name);
+					}
+					else
+					{
+						desc.permission = false;
+					}*/
+					if (transform.childCount == 0 && AnsItem == desc.sourceCell.transform.GetChild(0).gameObject)
+					{
+						desc.permission = true;
+						Debug.Log("This " + AnsItem.name + " is equal " + desc.sourceCell.transform.GetChild(0).GetComponent<Image>().sprite.name);
 					}
 					else
 					{
@@ -309,7 +320,6 @@ namespace Example4
 				SendNotification(desc);
 				result = desc.permission;
 			}
-
 			return result;
 		}
 
@@ -331,7 +341,7 @@ namespace Example4
 		}
 
 		/// <summary>
-		/// Change cell's sprite color on item put/remove.
+		/// Change cell's AnsItem color on item put/remove.
 		/// </summary>
 		/// <param name="condition"> true - filled, false - empty </param>
 		public void UpdateBackgroundState()

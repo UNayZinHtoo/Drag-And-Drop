@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using Example3;
 using TMPro;
 
 namespace Example4
@@ -12,6 +13,8 @@ namespace Example4
     public class DummyControlUnit : MonoBehaviour
     {
         public TextMeshProUGUI result;
+        //public bool dropResult = true;
+        //String[] correct ={"Star","Cup","Winner","Blue Star"};
         /// <summary>
         /// Operate all drag and drop requests and events from children cells
         /// </summary>
@@ -25,8 +28,8 @@ namespace Example4
             
             switch (desc.triggerType) // What type event is?
             {
-                case DragAndDropCell.TriggerType.DropRequest
-                    : // Request for item drag (note: do not destroy item on request)
+                case DragAndDropCell.TriggerType.DropRequest: // Request for item drag (note: do not destroy item on request)
+                    //Debug.Log(desc.destinationCell.transform.GetSiblingIndex());
                     Debug.Log(
                         "Request " + desc.item.name + " from " + sourceSheet.name + " to " + destinationSheet.name);
                     break;
@@ -95,14 +98,14 @@ namespace Example4
         }
         public void Check()
         {
-            String[] correct ={"Star","Cup","Winner","Blue Star"};
+            
             String resultText = "Congratulations!!!";
             
             for(int i = 0; i < GetComponent<DummyControlUnit>().gameObject.transform.childCount; i++)
             {
                 if (GetComponent<DummyControlUnit>().gameObject.transform.GetChild(i).childCount > 0)
                 {
-                    if (correct[i] != GetComponent<DummyControlUnit>().gameObject.transform.GetChild(i).GetChild(0).GetComponent<Image>().sprite.name)
+                    if (GetComponent<DummyControlUnit>().gameObject.transform.GetChild(i).GetComponent<DragAndDropCell>().AnsItem!= GetComponent<DummyControlUnit>().gameObject.transform.GetChild(i).GetChild(0).gameObject)
                     {
                         resultText = "Try Again!!!";
                         break;

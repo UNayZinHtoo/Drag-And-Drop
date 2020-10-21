@@ -279,6 +279,7 @@ MonoBehaviour:
   empty: {r: 0, g: 0, b: 0, a: 0}
   full: {r: 0, g: 0, b: 0, a: 0}
   unlimitedSource: 0
+  AnsItem: {fileID: 0}
 --- !u!114 &101699421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,6 +416,7 @@ MonoBehaviour:
   empty: {r: 0, g: 0, b: 0, a: 0}
   full: {r: 0, g: 0, b: 0, a: 0}
   unlimitedSource: 0
+  AnsItem: {fileID: 0}
 --- !u!114 &158776546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,6 +734,7 @@ MonoBehaviour:
   empty: {r: 0, g: 0, b: 0, a: 0}
   full: {r: 0, g: 0, b: 0, a: 0}
   unlimitedSource: 0
+  AnsItem: {fileID: 0}
 --- !u!114 &451892233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -782,7 +785,7 @@ GameObject:
   - component: {fileID: 480692178}
   - component: {fileID: 480692177}
   m_Layer: 5
-  m_Name: Item
+  m_Name: Cup Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1090,6 +1093,7 @@ MonoBehaviour:
   empty: {r: 0, g: 0, b: 0, a: 0}
   full: {r: 0, g: 0, b: 0, a: 0}
   unlimitedSource: 0
+  AnsItem: {fileID: 0}
 --- !u!114 &636987858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,7 +1144,7 @@ GameObject:
   - component: {fileID: 668597050}
   - component: {fileID: 668597049}
   m_Layer: 5
-  m_Name: Item
+  m_Name: Blue Star Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1356,6 +1360,7 @@ MonoBehaviour:
   empty: {r: 0, g: 0, b: 0, a: 0}
   full: {r: 0, g: 0, b: 0, a: 0}
   unlimitedSource: 0
+  AnsItem: {fileID: 0}
 --- !u!114 &757403182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1410,7 +1415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &859814235
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1577,9 +1582,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellType: 1
-  empty: {r: 0, g: 0, b: 0, a: 0}
-  full: {r: 0, g: 0, b: 0, a: 0}
+  empty: {r: 0, g: 0, b: 0, a: 0.54509807}
+  full: {r: 0, g: 0, b: 0, a: 0.5019608}
   unlimitedSource: 0
+  AnsItem: {fileID: 480692175}
 --- !u!114 &904214202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1713,7 +1719,7 @@ GameObject:
   - component: {fileID: 1031737980}
   - component: {fileID: 1031737979}
   m_Layer: 5
-  m_Name: Item
+  m_Name: Winner Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1956,8 +1962,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1097226324}
+  m_Children: []
   m_Father: {fileID: 1827659384}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1982,6 +1987,7 @@ MonoBehaviour:
   empty: {r: 0, g: 0, b: 0, a: 0}
   full: {r: 0, g: 0, b: 0, a: 0}
   unlimitedSource: 0
+  AnsItem: {fileID: 0}
 --- !u!114 &1084568996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2032,7 +2038,7 @@ GameObject:
   - component: {fileID: 1097226326}
   - component: {fileID: 1097226325}
   m_Layer: 5
-  m_Name: Item
+  m_Name: Star Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2049,7 +2055,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1084568994}
+  m_Father: {fileID: 1412763659}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -2161,6 +2167,7 @@ MonoBehaviour:
   empty: {r: 0, g: 0, b: 0, a: 0}
   full: {r: 0, g: 0, b: 0, a: 0}
   unlimitedSource: 0
+  AnsItem: {fileID: 0}
 --- !u!114 &1176504843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2249,9 +2256,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellType: 0
-  empty: {r: 0, g: 0, b: 0, a: 0}
-  full: {r: 0, g: 0, b: 0, a: 0}
+  empty: {r: 0, g: 0, b: 0, a: 0.54509807}
+  full: {r: 0, g: 0, b: 0, a: 0.5019608}
   unlimitedSource: 0
+  AnsItem: {fileID: 668597047}
 --- !u!114 &1184850299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2344,6 +2352,7 @@ MonoBehaviour:
   empty: {r: 0, g: 0, b: 0, a: 0}
   full: {r: 0, g: 0, b: 0, a: 0}
   unlimitedSource: 0
+  AnsItem: {fileID: 0}
 --- !u!114 &1279385088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2497,7 +2506,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1097226324}
   m_Father: {fileID: 542025449}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2519,9 +2529,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellType: 1
-  empty: {r: 0, g: 0, b: 0, a: 0}
-  full: {r: 0, g: 0, b: 0, a: 0}
+  empty: {r: 0, g: 0, b: 0, a: 0.54509807}
+  full: {r: 0, g: 0, b: 0, a: 0.5019608}
   unlimitedSource: 0
+  AnsItem: {fileID: 1097226323}
 --- !u!114 &1412763661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2744,6 +2755,7 @@ MonoBehaviour:
   empty: {r: 0, g: 0, b: 0, a: 0}
   full: {r: 0, g: 0, b: 0, a: 0}
   unlimitedSource: 0
+  AnsItem: {fileID: 0}
 --- !u!114 &1635579491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3128,9 +3140,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellType: 0
-  empty: {r: 0, g: 0, b: 0, a: 0}
-  full: {r: 0, g: 0, b: 0, a: 0}
+  empty: {r: 0, g: 0, b: 0, a: 0.54509807}
+  full: {r: 0, g: 0, b: 0, a: 0.5019608}
   unlimitedSource: 0
+  AnsItem: {fileID: 1031737977}
 --- !u!114 &2104216590
 MonoBehaviour:
   m_ObjectHideFlags: 0
