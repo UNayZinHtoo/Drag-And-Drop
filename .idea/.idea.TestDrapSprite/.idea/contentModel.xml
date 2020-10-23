@@ -40,6 +40,7 @@
             <e p="DragAndDropItem.cs" t="Include" />
             <e p="DummyControlUnit.cs" t="Include" />
           </e>
+          <e p="ItemClick.cs" t="Include" />
           <e p="MainSceneManager.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
