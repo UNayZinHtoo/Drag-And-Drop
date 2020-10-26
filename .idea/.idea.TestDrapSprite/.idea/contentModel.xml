@@ -42,6 +42,18 @@
           </e>
           <e p="ItemClick.cs" t="Include" />
           <e p="MainSceneManager.cs" t="Include" />
+          <e p="Type 2.1" t="Include">
+            <e p="CalculateNumbers.cs" t="Include" />
+          </e>
+          <e p="Type 2.2" t="Include">
+            <e p="GreaterNumber.cs" t="Include" />
+          </e>
+          <e p="Type 2.3" t="Include">
+            <e p="MatchAlphabet.cs" t="Include" />
+          </e>
+          <e p="Type 2.4" t="Include">
+            <e p="MatchNumber.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

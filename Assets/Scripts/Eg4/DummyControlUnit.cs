@@ -37,6 +37,8 @@ namespace Example4
                     result.transform.gameObject.SetActive(false);
                     if (desc.permission == true) // If drop successful (was permitted before)
                     {
+                        MatchNumber n=new MatchNumber();
+                        n.SetUpQuestion();
                         Debug.Log("Successful drop " + desc.item.name + " from " + sourceSheet.name + " to " +
                                   destinationSheet.name);
                     }

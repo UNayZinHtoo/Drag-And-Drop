@@ -81,6 +81,10 @@
      <Compile Include="Assets\Scripts\Eg4\DummyControlUnit.cs" />
      <Compile Include="Assets\Scripts\ItemClick.cs" />
      <Compile Include="Assets\Scripts\MainSceneManager.cs" />
+     <Compile Include="Assets\Scripts\Type 2.1\CalculateNumbers.cs" />
+     <Compile Include="Assets\Scripts\Type 2.2\GreaterNumber.cs" />
+     <Compile Include="Assets\Scripts\Type 2.3\MatchAlphabet.cs" />
+     <Compile Include="Assets\Scripts\Type 2.4\MatchNumber.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
