@@ -23,8 +23,6 @@ public class MatchNumber : MonoBehaviour
     public TextMeshProUGUI ans2Text;
     public TextMeshProUGUI ans3Text;
     
-    
-    
     private string question;
 
     private readonly Random _random = new Random();
@@ -32,7 +30,7 @@ public class MatchNumber : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetUpQuestion();
+        StartCoroutine(SetUpQuestion());
     }
 
     // Update is called once per frame
@@ -41,14 +39,15 @@ public class MatchNumber : MonoBehaviour
         
     }
 
-    public void SetUpQuestion()
+    public IEnumerator SetUpQuestion()
     {
+        yield return new WaitForSeconds(0.1f);
         num=_random.Next(2,10);
         m1=_random.Next(1,num);
         m2 = num - m1;
         
         int[] result = {m2,m2+1,m2 > 1 ? m2-1 : m2+2 };
-        //Shuffle(result);
+        Shuffle(result);
 
         question = "which number is match with "+ m1 +" to get " +num+" ?";
         
@@ -77,8 +76,13 @@ public class MatchNumber : MonoBehaviour
         int ans =Convert.ToInt32(ansText.text);
         if (ans == m1)
         {
-            SetUpQuestion();
+            StartCoroutine(SetUpQuestion());
         }
+    }
+
+    public int GetAnswer()
+    {
+        return m2;
     }
 
 }

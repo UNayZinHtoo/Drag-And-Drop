@@ -35,7 +35,8 @@ public class CalculateNumbers : MonoBehaviour
     public TextMeshProUGUI ans2Text;
     public TextMeshProUGUI ans3Text;
     
-    [SerializeField] private Operators operators;
+    [SerializeField]
+    private Operators operators;
     
     
     

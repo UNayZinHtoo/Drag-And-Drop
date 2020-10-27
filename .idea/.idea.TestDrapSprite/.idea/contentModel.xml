@@ -17,9 +17,9 @@
             <e p="WeaponSlot.cs" t="Include" />
           </e>
           <e p="Eg" t="Include">
-            <e p="DragAndDropCell.cs" t="Include" />
-            <e p="DragAndDropItem.cs" t="Include" />
-            <e p="DummyControlUnit.cs" t="Include" />
+            <e p="Cell.cs" t="Include" />
+            <e p="Controller.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
           </e>
           <e p="Eg1" t="Include">
             <e p="DragAndDropManager.cs" t="Include" />
@@ -52,6 +52,9 @@
             <e p="MatchAlphabet.cs" t="Include" />
           </e>
           <e p="Type 2.4" t="Include">
+            <e p="Cell.cs" t="Include" />
+            <e p="Controller.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
             <e p="MatchNumber.cs" t="Include" />
           </e>
         </e>

@@ -1207,7 +1207,7 @@ MonoBehaviour:
   ans1Text: {fileID: 214029841}
   ans2Text: {fileID: 1420375512}
   ans3Text: {fileID: 1006123682}
-  operators: 0
+  operators: 1
 --- !u!4 &1517151976
 Transform:
   m_ObjectHideFlags: 0
